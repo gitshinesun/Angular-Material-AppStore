@@ -1,0 +1,189 @@
+<!-- jombotron -->
+<mat-toolbar>
+    <mat-icon>event_available</mat-icon>
+    <span class="example-spacer">Software</span>
+    <!-- <mat-spinner strokeWidth="3" [diameter]="50"></mat-spinner>   -->
+    <div class="top-menu-btn">
+      <button mat-mini-fab [matMenuTriggerFor]="menu">
+          <mat-icon style="color:black;">menu</mat-icon>
+      </button>
+      <span style="color: white;">App store</span>
+  </div>
+      <mat-icon style="color: white; flex:50px 100px;">search</mat-icon>
+      <div mat-card-avatar class="header-image"></div>
+      <mat-expansion-panel style="background: rgb(0, 217, 252); " class="mat-elevation-z0">
+          
+              <mat-expansion-panel-header>
+                  <mat-panel-title style="color: white;">
+                          zinmeng.s
+                  </mat-panel-title>
+                  <mat-panel-description style="color: white;">
+                  </mat-panel-description>
+              </mat-expansion-panel-header>
+  
+                  <!-- <a href="#">subcategory2</a><br>
+                  <a href="#">subcategory3</a><br>
+                  <a href="#">subcategory4</a><br> -->
+      
+          </mat-expansion-panel>
+          <!-- <mat-form-field>
+                  <input matInput placeholder="Nick name">
+              </mat-form-field> -->
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>
+          <mat-icon>dialpad</mat-icon>
+          <span>Redial</span>
+      </button>
+      <button mat-menu-item disabled>
+          <mat-icon>voicemail</mat-icon>
+          <span>Check voicemail</span>
+      </button>
+      <button mat-menu-item>
+          <mat-icon>notifications_off</mat-icon>
+          <span>Disable alerts</span>
+      </button>
+     </mat-menu>
+     
+    
+  </mat-toolbar>
+  
+  <!-- All content -->
+  <mat-sidenav-container>
+      <mat-sidenav #sidenav  mode="side" opened="true" class="mat-elevation-z5">
+            <a [routerLink]="['/store']">   
+          <mat-toolbar style="background: lightgray;" class="mat-elevation-z0">
+                  <mat-icon>home</mat-icon>
+                  <span>Home</span>
+          </mat-toolbar>
+            </a>
+          <app-subcategorylist></app-subcategorylist>
+          
+      </mat-sidenav>
+      <!-- primary content -->
+      <div class="container" style=" display: flex;">
+        <mat-toolbar style="background: lightgray;" class="mat-elevation-z0">
+          <mat-icon>home</mat-icon>
+          <mat-icon>chevron_right</mat-icon>
+          <span>Category1</span>
+          <mat-icon>chevron_right</mat-icon>
+          <span>subcategory1</span>
+      </mat-toolbar>
+      <br>
+      <div _ngcontent-c14=""  style="flex: 1 1 95%;  max-width:100%; max-height: 100%;">
+        <mat-card _ngcontent-c14="" class="mat-card" style="padding: 50px; ">
+          <div style="background-image: url(../../assets/gameicon/brain.png); width: 100px; height: 100px;"></div>
+        </mat-card>
+      </div>
+      <div class="cards">
+      <mat-card>
+          <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+          <mat-card-content>
+            <div style="display: flex;">
+                <p style="padding-top: 5px;">
+                Baseball
+                <span style="font-size: 80%">subcategory1</span> </p>
+                <div>
+                    <button mat-icon-button [matMenuTriggerFor]="menu">
+                        <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item>
+                            <mat-icon>dialpad</mat-icon>
+                            <span>Redial</span>
+                        </button>
+                        <button mat-menu-item>
+                            <mat-icon>voicemail</mat-icon>
+                            <span>Check voicemail</span>
+                        </button>
+                        <button mat-menu-item>
+                            <mat-icon>notifications_off</mat-icon>
+                            <span>Disable alerts</span>
+                        </button>
+                    </mat-menu>
+                </div>
+              </div>
+              <div class="starIcon">
+                <mat-icon>star rate</mat-icon>
+                <mat-icon>star rate</mat-icon>
+                <mat-icon>star rate</mat-icon>
+                <mat-icon>star rate</mat-icon>
+                <mat-icon>star rate</mat-icon>
+            </div>
+          </mat-card-content>
+        </mat-card>&nbsp;
+        <mat-card>
+          <img mat-card-image src="../../assets/gameicon/sport1.jpg" alt="Photo of a Angry birds">
+          <mat-card-content>
+            <div style="display: flex;">
+              <p style="padding-top: 5px;">
+                DDD Pool
+                <span style="font-size: 80%">subcategory1</span> </p>
+                <div >
+                    <button mat-icon-button [matMenuTriggerFor]="menu">
+                        <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item>
+                            <mat-icon>dialpad</mat-icon>
+                            <span>Redial</span>
+                        </button>
+                        <button mat-menu-item>
+                            <mat-icon>voicemail</mat-icon>
+                            <span>Check voicemail</span>
+                        </button>
+                        <button mat-menu-item>
+                            <mat-icon>notifications_off</mat-icon>
+                            <span>Disable alerts</span>
+                        </button>
+                    </mat-menu>
+                </div>
+              </div>
+              <div class="starIcon">
+                <mat-icon>star rate</mat-icon>
+                <mat-icon>star rate</mat-icon>
+                <mat-icon>star rate</mat-icon>
+                <mat-icon>star rate</mat-icon>
+                <mat-icon style="color: black">star rate</mat-icon>
+            </div>
+          </mat-card-content>
+        </mat-card>&nbsp;
+        <mat-card>
+          <img mat-card-image src="../../assets/gameicon/sport3.jpg" alt="Photo of a Angry birds">
+          <mat-card-content>
+            <div style="display: flex;">
+                <p style="padding-top: 5px;">
+                    Football
+                    <span style="font-size: 80%">subcategory1</span> </p>
+                <div>
+                    <button mat-icon-button [matMenuTriggerFor]="menu">
+                        <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item>
+                            <mat-icon>dialpad</mat-icon>
+                            <span>Redial</span>
+                        </button>
+                        <button mat-menu-item>
+                            <mat-icon>voicemail</mat-icon>
+                            <span>Check voicemail</span>
+                        </button>
+                        <button mat-menu-item>
+                            <mat-icon>notifications_off</mat-icon>
+                            <span>Disable alerts</span>
+                        </button>
+                    </mat-menu>
+                </div>
+              </div>
+              <div class="starIcon">
+                <mat-icon>star rate</mat-icon>
+                <mat-icon>star rate</mat-icon>
+                <mat-icon>star rate</mat-icon>
+                <mat-icon style="color: black">star rate</mat-icon>
+                <mat-icon style="color: black">star rate</mat-icon>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      </div>
+  
+  </mat-sidenav-container>  

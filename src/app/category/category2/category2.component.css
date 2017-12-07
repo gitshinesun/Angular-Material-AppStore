@@ -1,0 +1,90 @@
+ 
+  .example-spacer {
+    left: 30px;
+    display: flex;
+  }
+  .top-menu-btn{
+    padding: 200px;
+    flex: 1 1 auto;
+  }
+  mat-toolbar{
+    background: rgb(0, 217, 252);
+  }
+  .example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  mat-sidenav {
+    width: 250px;
+    padding-bottom: 72px;
+    height: 100%;
+    overflow-x: auto;
+  }
+  mat-list-item{
+    padding: 30px;
+  }
+  .container{
+    width: 95%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .connect-card{
+    width: 18%;
+    display: flex;
+    padding: 15px 0px;
+  }
+  .connect-card mat-card{
+    margin: 5px 3px;
+    flex: 1 1 auto;
+  }
+  .example-card {
+    width: 18%;
+  }
+  .header-image {
+    background-image: url('../../../assets/gameicon/Angry_Birds.png');
+    background-size: cover;
+  }
+  img{
+    width: 100%;
+    align-content: center;
+    margin: 0px;
+    flex: 1 1 auto;
+  }
+  .category {
+    font-size: 13px;
+    width: 200px;
+    height: 60px;
+    background: #81d4fa;
+    text-align: left;
+  }
+  button[mat-mini-fab]{
+    background: #ffe082;
+  }
+  button[mat-mini-fab]>mat-icon{
+    color:black;
+  }
+  .starIcon {
+    padding: 10px 1px 0px 1px;
+    color: rgb(250, 214, 95);
+    display: flex;
+  }
+  .starIcon mat-icon{
+    font-size: 80%;
+  }
+  .button-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px;
+  }
+  a{
+    text-decoration: none;
+  }
+  /* .mat-icon-button{
+    padding-left: 20px;
+    margin-left: 20px;
+  } */

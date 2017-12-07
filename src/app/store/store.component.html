@@ -1,0 +1,1226 @@
+<!-- jombotron -->
+<mat-toolbar>
+  <mat-icon>event_available</mat-icon>
+  <span class="example-spacer">Software</span>
+  <!-- <mat-spinner strokeWidth="3" [diameter]="50"></mat-spinner>   -->
+  <div class="top-menu-btn">
+    <button mat-mini-fab [matMenuTriggerFor]="menu">
+        <mat-icon style="color:black;">menu</mat-icon>
+    </button>
+    <span style="color: white;">App store</span>
+</div>
+    <mat-icon style="color: white; flex:50px 100px;">search</mat-icon>
+    <div mat-card-avatar class="header-image"></div>
+    <mat-expansion-panel style="background: rgb(0, 217, 252); " class="mat-elevation-z0">
+        
+            <mat-expansion-panel-header>
+                <mat-panel-title style="color: white;">
+                        zinmeng.s
+                </mat-panel-title>
+                <mat-panel-description style="color: white;">
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+
+                <!-- <a href="#">subcategory2</a><br>
+                <a href="#">subcategory3</a><br>
+                <a href="#">subcategory4</a><br> -->
+    
+        </mat-expansion-panel>
+        <!-- <mat-form-field>
+                <input matInput placeholder="Nick name">
+            </mat-form-field> -->
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+        <mat-icon>dialpad</mat-icon>
+        <span>Redial</span>
+    </button>
+    <button mat-menu-item disabled>
+        <mat-icon>voicemail</mat-icon>
+        <span>Check voicemail</span>
+    </button>
+    <button mat-menu-item>
+        <mat-icon>notifications_off</mat-icon>
+        <span>Disable alerts</span>
+    </button>
+   </mat-menu>
+   
+  
+</mat-toolbar>
+
+<!-- All content -->
+<mat-sidenav-container>
+    <mat-sidenav #sidenav  mode="side" opened="true" class="mat-elevation-z5">
+        <mat-toolbar style="background: lightgray;" class="mat-elevation-z0">
+                <mat-icon>home</mat-icon>
+                <span>Home</span>
+        </mat-toolbar>
+
+        <app-subcategorylist></app-subcategorylist>
+        
+    </mat-sidenav>
+    <!-- primary content -->
+    <div class="container">
+        <div class="button-row">
+            <a [routerLink]="['/category1']" style="color:black;">
+                <button class="category" mat-raised-button>
+                    <button mat-mini-fab>
+                        <mat-icon style="color:black;">face</mat-icon>
+                    </button>&nbsp;&nbsp;&nbsp;&nbsp;Category1
+                </button>
+            </a>
+            <a [routerLink]="['/category2']" style="color:black;">
+                <button class="category" mat-raised-button>
+                    <button mat-mini-fab>
+                        <mat-icon style="color:black;">face</mat-icon>
+                    </button>&nbsp;&nbsp;&nbsp;&nbsp;Category2
+                </button>
+            </a>
+            <a [routerLink]="['/category3']" style="color:black;">
+                <button class="category" mat-raised-button>
+                    <button mat-mini-fab>
+                        <mat-icon style="color:black;">face</mat-icon>
+                    </button>&nbsp;&nbsp;&nbsp;&nbsp;Category3
+                </button>
+            </a>
+            <a [routerLink]="['/category4']" style="color:black;">
+                <button class="category" mat-raised-button>
+                    <button mat-mini-fab>
+                        <mat-icon style="color:black;">accessibility</mat-icon>
+                    </button>&nbsp;&nbsp;&nbsp;&nbsp;Category4
+                </button>
+            </a>
+        </div>
+        <br>
+    <!-- top application area -->
+    <div aria-label="this area is top app part.">
+        <mat-toolbar style="background: rgb(255, 255, 255);" class="mat-elevation-z0">
+            <span>
+               Top Applications
+            </span>
+        </mat-toolbar>
+        <div class="connect-card">
+            <mat-card>
+                <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                <mat-card-content>
+                  <div style="display: flex;">
+                      <p style="padding-top: 5px;">
+                      Baseball
+                      <span style="font-size: 80%">subcategory1</span> </p>
+                      <div>
+                          <button mat-icon-button [matMenuTriggerFor]="menu">
+                              <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                          </button>
+                          <mat-menu #menu="matMenu">
+                              <button mat-menu-item>
+                                  <mat-icon>dialpad</mat-icon>
+                                  <span>Redial</span>
+                              </button>
+                              <button mat-menu-item>
+                                  <mat-icon>voicemail</mat-icon>
+                                  <span>Check voicemail</span>
+                              </button>
+                              <button mat-menu-item>
+                                  <mat-icon>notifications_off</mat-icon>
+                                  <span>Disable alerts</span>
+                              </button>
+                          </mat-menu>
+                      </div>
+                    </div>
+                    <div class="starIcon">
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                  </div>
+                </mat-card-content>
+              </mat-card>   
+              <mat-card>
+                <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                <mat-card-content>
+                  <div style="display: flex;">
+                      <p style="padding-top: 5px;">
+                      Baseball
+                      <span style="font-size: 80%">subcategory1</span> </p>
+                      <div>
+                          <button mat-icon-button [matMenuTriggerFor]="menu">
+                              <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                          </button>
+                          <mat-menu #menu="matMenu">
+                              <button mat-menu-item>
+                                  <mat-icon>dialpad</mat-icon>
+                                  <span>Redial</span>
+                              </button>
+                              <button mat-menu-item>
+                                  <mat-icon>voicemail</mat-icon>
+                                  <span>Check voicemail</span>
+                              </button>
+                              <button mat-menu-item>
+                                  <mat-icon>notifications_off</mat-icon>
+                                  <span>Disable alerts</span>
+                              </button>
+                          </mat-menu>
+                      </div>
+                    </div>
+                    <div class="starIcon">
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                  </div>
+                </mat-card-content>
+              </mat-card>  
+              <mat-card>
+                <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                <mat-card-content>
+                  <div style="display: flex;">
+                      <p style="padding-top: 5px;">
+                      Baseball
+                      <span style="font-size: 80%">subcategory1</span> </p>
+                      <div>
+                          <button mat-icon-button [matMenuTriggerFor]="menu">
+                              <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                          </button>
+                          <mat-menu #menu="matMenu">
+                              <button mat-menu-item>
+                                  <mat-icon>dialpad</mat-icon>
+                                  <span>Redial</span>
+                              </button>
+                              <button mat-menu-item>
+                                  <mat-icon>voicemail</mat-icon>
+                                  <span>Check voicemail</span>
+                              </button>
+                              <button mat-menu-item>
+                                  <mat-icon>notifications_off</mat-icon>
+                                  <span>Disable alerts</span>
+                              </button>
+                          </mat-menu>
+                      </div>
+                    </div>
+                    <div class="starIcon">
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                  </div>
+                </mat-card-content>
+              </mat-card> 
+              <mat-card>
+                <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                <mat-card-content>
+                  <div style="display: flex;">
+                      <p style="padding-top: 5px;">
+                      Baseball
+                      <span style="font-size: 80%">subcategory1</span> </p>
+                      <div>
+                          <button mat-icon-button [matMenuTriggerFor]="menu">
+                              <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                          </button>
+                          <mat-menu #menu="matMenu">
+                              <button mat-menu-item>
+                                  <mat-icon>dialpad</mat-icon>
+                                  <span>Redial</span>
+                              </button>
+                              <button mat-menu-item>
+                                  <mat-icon>voicemail</mat-icon>
+                                  <span>Check voicemail</span>
+                              </button>
+                              <button mat-menu-item>
+                                  <mat-icon>notifications_off</mat-icon>
+                                  <span>Disable alerts</span>
+                              </button>
+                          </mat-menu>
+                      </div>
+                    </div>
+                    <div class="starIcon">
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                  </div>
+                </mat-card-content>
+              </mat-card> 
+<mat-card>
+                <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                <mat-card-content>
+                  <div style="display: flex;">
+                      <p style="padding-top: 5px;">
+                      Baseball
+                      <span style="font-size: 80%">subcategory1</span> </p>
+                      <div>
+                          <button mat-icon-button [matMenuTriggerFor]="menu">
+                              <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                          </button>
+                          <mat-menu #menu="matMenu">
+                              <button mat-menu-item>
+                                  <mat-icon>dialpad</mat-icon>
+                                  <span>Redial</span>
+                              </button>
+                              <button mat-menu-item>
+                                  <mat-icon>voicemail</mat-icon>
+                                  <span>Check voicemail</span>
+                              </button>
+                              <button mat-menu-item>
+                                  <mat-icon>notifications_off</mat-icon>
+                                  <span>Disable alerts</span>
+                              </button>
+                          </mat-menu>
+                      </div>
+                    </div>
+                    <div class="starIcon">
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                  </div>
+                </mat-card-content>
+              </mat-card> 
+        </div>
+    </div>
+    <br>
+    <div aria-label="this part is last app area">
+        <mat-toolbar style="background: white;" class="mat-elevation-z0">
+            <span>Last Applications</span>
+        </mat-toolbar>
+        <div class="connect-card">
+            <mat-card>
+                <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                <mat-card-content>
+                  <div style="display: flex;">
+                      <p style="padding-top: 5px;">
+                      Baseball
+                      <span style="font-size: 80%">subcategory1</span> </p>
+                      <div>
+                          <button mat-icon-button [matMenuTriggerFor]="menu">
+                              <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                          </button>
+                          <mat-menu #menu="matMenu">
+                              <button mat-menu-item>
+                                  <mat-icon>dialpad</mat-icon>
+                                  <span>Redial</span>
+                              </button>
+                              <button mat-menu-item>
+                                  <mat-icon>voicemail</mat-icon>
+                                  <span>Check voicemail</span>
+                              </button>
+                              <button mat-menu-item>
+                                  <mat-icon>notifications_off</mat-icon>
+                                  <span>Disable alerts</span>
+                              </button>
+                          </mat-menu>
+                      </div>
+                    </div>
+                    <div class="starIcon">
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                  </div>
+                </mat-card-content>
+              </mat-card>   
+              <mat-card>
+                <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                <mat-card-content>
+                  <div style="display: flex;">
+                      <p style="padding-top: 5px;">
+                      Baseball
+                      <span style="font-size: 80%">subcategory1</span> </p>
+                      <div>
+                          <button mat-icon-button [matMenuTriggerFor]="menu">
+                              <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                          </button>
+                          <mat-menu #menu="matMenu">
+                              <button mat-menu-item>
+                                  <mat-icon>dialpad</mat-icon>
+                                  <span>Redial</span>
+                              </button>
+                              <button mat-menu-item>
+                                  <mat-icon>voicemail</mat-icon>
+                                  <span>Check voicemail</span>
+                              </button>
+                              <button mat-menu-item>
+                                  <mat-icon>notifications_off</mat-icon>
+                                  <span>Disable alerts</span>
+                              </button>
+                          </mat-menu>
+                      </div>
+                    </div>
+                    <div class="starIcon">
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                  </div>
+                </mat-card-content>
+              </mat-card>  
+              <mat-card>
+                <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                <mat-card-content>
+                  <div style="display: flex;">
+                      <p style="padding-top: 5px;">
+                      Baseball
+                      <span style="font-size: 80%">subcategory1</span> </p>
+                      <div>
+                          <button mat-icon-button [matMenuTriggerFor]="menu">
+                              <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                          </button>
+                          <mat-menu #menu="matMenu">
+                              <button mat-menu-item>
+                                  <mat-icon>dialpad</mat-icon>
+                                  <span>Redial</span>
+                              </button>
+                              <button mat-menu-item>
+                                  <mat-icon>voicemail</mat-icon>
+                                  <span>Check voicemail</span>
+                              </button>
+                              <button mat-menu-item>
+                                  <mat-icon>notifications_off</mat-icon>
+                                  <span>Disable alerts</span>
+                              </button>
+                          </mat-menu>
+                      </div>
+                    </div>
+                    <div class="starIcon">
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                  </div>
+                </mat-card-content>
+              </mat-card> 
+              <mat-card>
+                <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                <mat-card-content>
+                  <div style="display: flex;">
+                      <p style="padding-top: 5px;">
+                      Baseball
+                      <span style="font-size: 80%">subcategory1</span> </p>
+                      <div>
+                          <button mat-icon-button [matMenuTriggerFor]="menu">
+                              <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                          </button>
+                          <mat-menu #menu="matMenu">
+                              <button mat-menu-item>
+                                  <mat-icon>dialpad</mat-icon>
+                                  <span>Redial</span>
+                              </button>
+                              <button mat-menu-item>
+                                  <mat-icon>voicemail</mat-icon>
+                                  <span>Check voicemail</span>
+                              </button>
+                              <button mat-menu-item>
+                                  <mat-icon>notifications_off</mat-icon>
+                                  <span>Disable alerts</span>
+                              </button>
+                          </mat-menu>
+                      </div>
+                    </div>
+                    <div class="starIcon">
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                  </div>
+                </mat-card-content>
+              </mat-card> 
+<mat-card>
+                <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                <mat-card-content>
+                  <div style="display: flex;">
+                      <p style="padding-top: 5px;">
+                      Baseball
+                      <span style="font-size: 80%">subcategory1</span> </p>
+                      <div>
+                          <button mat-icon-button [matMenuTriggerFor]="menu">
+                              <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                          </button>
+                          <mat-menu #menu="matMenu">
+                              <button mat-menu-item>
+                                  <mat-icon>dialpad</mat-icon>
+                                  <span>Redial</span>
+                              </button>
+                              <button mat-menu-item>
+                                  <mat-icon>voicemail</mat-icon>
+                                  <span>Check voicemail</span>
+                              </button>
+                              <button mat-menu-item>
+                                  <mat-icon>notifications_off</mat-icon>
+                                  <span>Disable alerts</span>
+                              </button>
+                          </mat-menu>
+                      </div>
+                    </div>
+                    <div class="starIcon">
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                      <mat-icon>star rate</mat-icon>
+                  </div>
+                </mat-card-content>
+              </mat-card> 
+        </div>
+            </div>
+            <br>
+            <div aria-label="this part is category1 area">
+                <mat-toolbar style="background: white;" class="mat-elevation-z0">
+                            <span>Category1 Applications</span>
+                </mat-toolbar>
+                <div class="connect-card">
+                    <mat-card>
+                        <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                        <mat-card-content>
+                          <div style="display: flex;">
+                              <p style="padding-top: 5px;">
+                              Baseball
+                              <span style="font-size: 80%">subcategory1</span> </p>
+                              <div>
+                                  <button mat-icon-button [matMenuTriggerFor]="menu">
+                                      <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                                  </button>
+                                  <mat-menu #menu="matMenu">
+                                      <button mat-menu-item>
+                                          <mat-icon>dialpad</mat-icon>
+                                          <span>Redial</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>voicemail</mat-icon>
+                                          <span>Check voicemail</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>notifications_off</mat-icon>
+                                          <span>Disable alerts</span>
+                                      </button>
+                                  </mat-menu>
+                              </div>
+                            </div>
+                            <div class="starIcon">
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                          </div>
+                        </mat-card-content>
+                      </mat-card>   
+                      <mat-card>
+                        <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                        <mat-card-content>
+                          <div style="display: flex;">
+                              <p style="padding-top: 5px;">
+                              Baseball
+                              <span style="font-size: 80%">subcategory1</span> </p>
+                              <div>
+                                  <button mat-icon-button [matMenuTriggerFor]="menu">
+                                      <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                                  </button>
+                                  <mat-menu #menu="matMenu">
+                                      <button mat-menu-item>
+                                          <mat-icon>dialpad</mat-icon>
+                                          <span>Redial</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>voicemail</mat-icon>
+                                          <span>Check voicemail</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>notifications_off</mat-icon>
+                                          <span>Disable alerts</span>
+                                      </button>
+                                  </mat-menu>
+                              </div>
+                            </div>
+                            <div class="starIcon">
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                          </div>
+                        </mat-card-content>
+                      </mat-card>  
+                      <mat-card>
+                        <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                        <mat-card-content>
+                          <div style="display: flex;">
+                              <p style="padding-top: 5px;">
+                              Baseball
+                              <span style="font-size: 80%">subcategory1</span> </p>
+                              <div>
+                                  <button mat-icon-button [matMenuTriggerFor]="menu">
+                                      <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                                  </button>
+                                  <mat-menu #menu="matMenu">
+                                      <button mat-menu-item>
+                                          <mat-icon>dialpad</mat-icon>
+                                          <span>Redial</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>voicemail</mat-icon>
+                                          <span>Check voicemail</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>notifications_off</mat-icon>
+                                          <span>Disable alerts</span>
+                                      </button>
+                                  </mat-menu>
+                              </div>
+                            </div>
+                            <div class="starIcon">
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                          </div>
+                        </mat-card-content>
+                      </mat-card> 
+                      <mat-card>
+                        <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                        <mat-card-content>
+                          <div style="display: flex;">
+                              <p style="padding-top: 5px;">
+                              Baseball
+                              <span style="font-size: 80%">subcategory1</span> </p>
+                              <div>
+                                  <button mat-icon-button [matMenuTriggerFor]="menu">
+                                      <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                                  </button>
+                                  <mat-menu #menu="matMenu">
+                                      <button mat-menu-item>
+                                          <mat-icon>dialpad</mat-icon>
+                                          <span>Redial</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>voicemail</mat-icon>
+                                          <span>Check voicemail</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>notifications_off</mat-icon>
+                                          <span>Disable alerts</span>
+                                      </button>
+                                  </mat-menu>
+                              </div>
+                            </div>
+                            <div class="starIcon">
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                          </div>
+                        </mat-card-content>
+                      </mat-card> 
+        <mat-card>
+                        <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                        <mat-card-content>
+                          <div style="display: flex;">
+                              <p style="padding-top: 5px;">
+                              Baseball
+                              <span style="font-size: 80%">subcategory1</span> </p>
+                              <div>
+                                  <button mat-icon-button [matMenuTriggerFor]="menu">
+                                      <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                                  </button>
+                                  <mat-menu #menu="matMenu">
+                                      <button mat-menu-item>
+                                          <mat-icon>dialpad</mat-icon>
+                                          <span>Redial</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>voicemail</mat-icon>
+                                          <span>Check voicemail</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>notifications_off</mat-icon>
+                                          <span>Disable alerts</span>
+                                      </button>
+                                  </mat-menu>
+                              </div>
+                            </div>
+                            <div class="starIcon">
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                          </div>
+                        </mat-card-content>
+                      </mat-card> 
+                </div>
+            </div>
+        <div aria-label="category2">
+                <mat-toolbar style="background: white;" class="mat-elevation-z0">
+                    <span>Category2 Applications</span>
+                </mat-toolbar>
+                <div class="connect-card">
+                    <mat-card>
+                        <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                        <mat-card-content>
+                          <div style="display: flex;">
+                              <p style="padding-top: 5px;">
+                              Baseball
+                              <span style="font-size: 80%">subcategory1</span> </p>
+                              <div>
+                                  <button mat-icon-button [matMenuTriggerFor]="menu">
+                                      <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                                  </button>
+                                  <mat-menu #menu="matMenu">
+                                      <button mat-menu-item>
+                                          <mat-icon>dialpad</mat-icon>
+                                          <span>Redial</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>voicemail</mat-icon>
+                                          <span>Check voicemail</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>notifications_off</mat-icon>
+                                          <span>Disable alerts</span>
+                                      </button>
+                                  </mat-menu>
+                              </div>
+                            </div>
+                            <div class="starIcon">
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                          </div>
+                        </mat-card-content>
+                      </mat-card>   
+                      <mat-card>
+                        <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                        <mat-card-content>
+                          <div style="display: flex;">
+                              <p style="padding-top: 5px;">
+                              Baseball
+                              <span style="font-size: 80%">subcategory1</span> </p>
+                              <div>
+                                  <button mat-icon-button [matMenuTriggerFor]="menu">
+                                      <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                                  </button>
+                                  <mat-menu #menu="matMenu">
+                                      <button mat-menu-item>
+                                          <mat-icon>dialpad</mat-icon>
+                                          <span>Redial</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>voicemail</mat-icon>
+                                          <span>Check voicemail</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>notifications_off</mat-icon>
+                                          <span>Disable alerts</span>
+                                      </button>
+                                  </mat-menu>
+                              </div>
+                            </div>
+                            <div class="starIcon">
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                          </div>
+                        </mat-card-content>
+                      </mat-card>  
+                      <mat-card>
+                        <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                        <mat-card-content>
+                          <div style="display: flex;">
+                              <p style="padding-top: 5px;">
+                              Baseball
+                              <span style="font-size: 80%">subcategory1</span> </p>
+                              <div>
+                                  <button mat-icon-button [matMenuTriggerFor]="menu">
+                                      <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                                  </button>
+                                  <mat-menu #menu="matMenu">
+                                      <button mat-menu-item>
+                                          <mat-icon>dialpad</mat-icon>
+                                          <span>Redial</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>voicemail</mat-icon>
+                                          <span>Check voicemail</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>notifications_off</mat-icon>
+                                          <span>Disable alerts</span>
+                                      </button>
+                                  </mat-menu>
+                              </div>
+                            </div>
+                            <div class="starIcon">
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                          </div>
+                        </mat-card-content>
+                      </mat-card> 
+                      <mat-card>
+                        <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                        <mat-card-content>
+                          <div style="display: flex;">
+                              <p style="padding-top: 5px;">
+                              Baseball
+                              <span style="font-size: 80%">subcategory1</span> </p>
+                              <div>
+                                  <button mat-icon-button [matMenuTriggerFor]="menu">
+                                      <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                                  </button>
+                                  <mat-menu #menu="matMenu">
+                                      <button mat-menu-item>
+                                          <mat-icon>dialpad</mat-icon>
+                                          <span>Redial</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>voicemail</mat-icon>
+                                          <span>Check voicemail</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>notifications_off</mat-icon>
+                                          <span>Disable alerts</span>
+                                      </button>
+                                  </mat-menu>
+                              </div>
+                            </div>
+                            <div class="starIcon">
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                          </div>
+                        </mat-card-content>
+                      </mat-card> 
+        <mat-card>
+                        <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                        <mat-card-content>
+                          <div style="display: flex;">
+                              <p style="padding-top: 5px;">
+                              Baseball
+                              <span style="font-size: 80%">subcategory1</span> </p>
+                              <div>
+                                  <button mat-icon-button [matMenuTriggerFor]="menu">
+                                      <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                                  </button>
+                                  <mat-menu #menu="matMenu">
+                                      <button mat-menu-item>
+                                          <mat-icon>dialpad</mat-icon>
+                                          <span>Redial</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>voicemail</mat-icon>
+                                          <span>Check voicemail</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>notifications_off</mat-icon>
+                                          <span>Disable alerts</span>
+                                      </button>
+                                  </mat-menu>
+                              </div>
+                            </div>
+                            <div class="starIcon">
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                          </div>
+                        </mat-card-content>
+                      </mat-card> 
+                </div>
+            </div>
+            <br>
+            <div aria-label="category3">
+                <mat-toolbar style="background: white;" class="mat-elevation-z0">
+                        <span>Category3 Applications</span>
+                </mat-toolbar>
+                <div class="connect-card">
+                    <mat-card>
+                        <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                        <mat-card-content>
+                          <div style="display: flex;">
+                              <p style="padding-top: 5px;">
+                              Baseball
+                              <span style="font-size: 80%">subcategory1</span> </p>
+                              <div>
+                                  <button mat-icon-button [matMenuTriggerFor]="menu">
+                                      <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                                  </button>
+                                  <mat-menu #menu="matMenu">
+                                      <button mat-menu-item>
+                                          <mat-icon>dialpad</mat-icon>
+                                          <span>Redial</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>voicemail</mat-icon>
+                                          <span>Check voicemail</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>notifications_off</mat-icon>
+                                          <span>Disable alerts</span>
+                                      </button>
+                                  </mat-menu>
+                              </div>
+                            </div>
+                            <div class="starIcon">
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                          </div>
+                        </mat-card-content>
+                      </mat-card>   
+                      <mat-card>
+                        <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                        <mat-card-content>
+                          <div style="display: flex;">
+                              <p style="padding-top: 5px;">
+                              Baseball
+                              <span style="font-size: 80%">subcategory1</span> </p>
+                              <div>
+                                  <button mat-icon-button [matMenuTriggerFor]="menu">
+                                      <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                                  </button>
+                                  <mat-menu #menu="matMenu">
+                                      <button mat-menu-item>
+                                          <mat-icon>dialpad</mat-icon>
+                                          <span>Redial</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>voicemail</mat-icon>
+                                          <span>Check voicemail</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>notifications_off</mat-icon>
+                                          <span>Disable alerts</span>
+                                      </button>
+                                  </mat-menu>
+                              </div>
+                            </div>
+                            <div class="starIcon">
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                          </div>
+                        </mat-card-content>
+                      </mat-card>  
+                      <mat-card>
+                        <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                        <mat-card-content>
+                          <div style="display: flex;">
+                              <p style="padding-top: 5px;">
+                              Baseball
+                              <span style="font-size: 80%">subcategory1</span> </p>
+                              <div>
+                                  <button mat-icon-button [matMenuTriggerFor]="menu">
+                                      <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                                  </button>
+                                  <mat-menu #menu="matMenu">
+                                      <button mat-menu-item>
+                                          <mat-icon>dialpad</mat-icon>
+                                          <span>Redial</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>voicemail</mat-icon>
+                                          <span>Check voicemail</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>notifications_off</mat-icon>
+                                          <span>Disable alerts</span>
+                                      </button>
+                                  </mat-menu>
+                              </div>
+                            </div>
+                            <div class="starIcon">
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                          </div>
+                        </mat-card-content>
+                      </mat-card> 
+                      <mat-card>
+                        <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                        <mat-card-content>
+                          <div style="display: flex;">
+                              <p style="padding-top: 5px;">
+                              Baseball
+                              <span style="font-size: 80%">subcategory1</span> </p>
+                              <div>
+                                  <button mat-icon-button [matMenuTriggerFor]="menu">
+                                      <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                                  </button>
+                                  <mat-menu #menu="matMenu">
+                                      <button mat-menu-item>
+                                          <mat-icon>dialpad</mat-icon>
+                                          <span>Redial</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>voicemail</mat-icon>
+                                          <span>Check voicemail</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>notifications_off</mat-icon>
+                                          <span>Disable alerts</span>
+                                      </button>
+                                  </mat-menu>
+                              </div>
+                            </div>
+                            <div class="starIcon">
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                          </div>
+                        </mat-card-content>
+                      </mat-card> 
+        <mat-card>
+                        <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                        <mat-card-content>
+                          <div style="display: flex;">
+                              <p style="padding-top: 5px;">
+                              Baseball
+                              <span style="font-size: 80%">subcategory1</span> </p>
+                              <div>
+                                  <button mat-icon-button [matMenuTriggerFor]="menu">
+                                      <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                                  </button>
+                                  <mat-menu #menu="matMenu">
+                                      <button mat-menu-item>
+                                          <mat-icon>dialpad</mat-icon>
+                                          <span>Redial</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>voicemail</mat-icon>
+                                          <span>Check voicemail</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>notifications_off</mat-icon>
+                                          <span>Disable alerts</span>
+                                      </button>
+                                  </mat-menu>
+                              </div>
+                            </div>
+                            <div class="starIcon">
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                          </div>
+                        </mat-card-content>
+                      </mat-card> 
+                </div>
+            </div>
+        <br>
+            <div aria-label="category4">
+                <mat-toolbar style="background: white;" class="mat-elevation-z0">
+                        <span>Category4 Applications</span>
+                </mat-toolbar>
+                <div class="connect-card">
+                    <mat-card>
+                        <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                        <mat-card-content>
+                          <div style="display: flex;">
+                              <p style="padding-top: 5px;">
+                              Baseball
+                              <span style="font-size: 80%">subcategory1</span> </p>
+                              <div>
+                                  <button mat-icon-button [matMenuTriggerFor]="menu">
+                                      <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                                  </button>
+                                  <mat-menu #menu="matMenu">
+                                      <button mat-menu-item>
+                                          <mat-icon>dialpad</mat-icon>
+                                          <span>Redial</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>voicemail</mat-icon>
+                                          <span>Check voicemail</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>notifications_off</mat-icon>
+                                          <span>Disable alerts</span>
+                                      </button>
+                                  </mat-menu>
+                              </div>
+                            </div>
+                            <div class="starIcon">
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                          </div>
+                        </mat-card-content>
+                      </mat-card>   
+                      <mat-card>
+                        <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                        <mat-card-content>
+                          <div style="display: flex;">
+                              <p style="padding-top: 5px;">
+                              Baseball
+                              <span style="font-size: 80%">subcategory1</span> </p>
+                              <div>
+                                  <button mat-icon-button [matMenuTriggerFor]="menu">
+                                      <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                                  </button>
+                                  <mat-menu #menu="matMenu">
+                                      <button mat-menu-item>
+                                          <mat-icon>dialpad</mat-icon>
+                                          <span>Redial</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>voicemail</mat-icon>
+                                          <span>Check voicemail</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>notifications_off</mat-icon>
+                                          <span>Disable alerts</span>
+                                      </button>
+                                  </mat-menu>
+                              </div>
+                            </div>
+                            <div class="starIcon">
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                          </div>
+                        </mat-card-content>
+                      </mat-card>  
+                      <mat-card>
+                        <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                        <mat-card-content>
+                          <div style="display: flex;">
+                              <p style="padding-top: 5px;">
+                              Baseball
+                              <span style="font-size: 80%">subcategory1</span> </p>
+                              <div>
+                                  <button mat-icon-button [matMenuTriggerFor]="menu">
+                                      <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                                  </button>
+                                  <mat-menu #menu="matMenu">
+                                      <button mat-menu-item>
+                                          <mat-icon>dialpad</mat-icon>
+                                          <span>Redial</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>voicemail</mat-icon>
+                                          <span>Check voicemail</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>notifications_off</mat-icon>
+                                          <span>Disable alerts</span>
+                                      </button>
+                                  </mat-menu>
+                              </div>
+                            </div>
+                            <div class="starIcon">
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                          </div>
+                        </mat-card-content>
+                      </mat-card> 
+                      <mat-card>
+                        <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                        <mat-card-content>
+                          <div style="display: flex;">
+                              <p style="padding-top: 5px;">
+                              Baseball
+                              <span style="font-size: 80%">subcategory1</span> </p>
+                              <div>
+                                  <button mat-icon-button [matMenuTriggerFor]="menu">
+                                      <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                                  </button>
+                                  <mat-menu #menu="matMenu">
+                                      <button mat-menu-item>
+                                          <mat-icon>dialpad</mat-icon>
+                                          <span>Redial</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>voicemail</mat-icon>
+                                          <span>Check voicemail</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>notifications_off</mat-icon>
+                                          <span>Disable alerts</span>
+                                      </button>
+                                  </mat-menu>
+                              </div>
+                            </div>
+                            <div class="starIcon">
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                          </div>
+                        </mat-card-content>
+                      </mat-card> 
+        <mat-card>
+                        <img mat-card-image src="../../assets/gameicon/sport4.jpg">
+                        <mat-card-content>
+                          <div style="display: flex;">
+                              <p style="padding-top: 5px;">
+                              Baseball
+                              <span style="font-size: 80%">subcategory1</span> </p>
+                              <div>
+                                  <button mat-icon-button [matMenuTriggerFor]="menu">
+                                      <mat-icon style="padding-left: 20px;">more_vert</mat-icon>
+                                  </button>
+                                  <mat-menu #menu="matMenu">
+                                      <button mat-menu-item>
+                                          <mat-icon>dialpad</mat-icon>
+                                          <span>Redial</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>voicemail</mat-icon>
+                                          <span>Check voicemail</span>
+                                      </button>
+                                      <button mat-menu-item>
+                                          <mat-icon>notifications_off</mat-icon>
+                                          <span>Disable alerts</span>
+                                      </button>
+                                  </mat-menu>
+                              </div>
+                            </div>
+                            <div class="starIcon">
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                              <mat-icon>star rate</mat-icon>
+                          </div>
+                        </mat-card-content>
+                      </mat-card> 
+                </div>
+            </div>
+        <br>
+    </div>
+    <br>
+</mat-sidenav-container>
